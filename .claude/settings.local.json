@@ -11,7 +11,9 @@
       "Bash(codesign --verify --deep --strict \"/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app\")",
       "Bash(xattr -cr \"/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app\")",
       "Bash(codesign --force --deep --sign - '/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app/Contents/Library/LoginItems/Mac Mouse Fix Helper.app')",
-      "Bash(codesign --force --deep --sign - '/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app')"
+      "Bash(codesign --force --deep --sign - '/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app')",
+      "Bash(chmod +x /Users/diepmac/Documents/MyCode/mac-mouse-fix/run-dev.sh)",
+      "Bash(open \"/Applications/Mac Mouse Fix.app\")"
     ]
   }
 }
