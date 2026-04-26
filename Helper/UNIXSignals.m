@@ -130,7 +130,7 @@
             ///     Sidenote: In previous notes, we speculated that `NSApplicationMain(argc, argv)` (found in main.m) sets up its own SIGTERM handler which we're overriding here, but this code validates that that's not true.
             ///     Note: We're only let `SIG_DFL` pass through, not `SIG_IGN` since we wanna catch any previous alteration of the default signal handling that we might be overriding here.
             bool signal_handler_did_exist = (old_action.sa_handler != SIG_DFL);
-            assert(!signal_handler_did_exist);
+            if (signal_handler_did_exist) NSLog(@"UNIXSignals: A previous signal handler existed (non-fatal, ignoring)");
         }
         
         /// Get dispatch queue

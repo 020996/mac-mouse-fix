@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xcodebuild -project \"/Users/diepmac/Documents/MyCode/mac-mouse-fix/Mouse Fix.xcodeproj\" -list)",
+      "Bash(xcodebuild -project \"/Users/diepmac/Documents/MyCode/mac-mouse-fix/Mouse Fix.xcodeproj\" -scheme \"Fast Build\" -configuration Debug build CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=NO)",
+      "Bash(open \"/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app\")",
+      "Bash(\"/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app/Contents/MacOS/Mac Mouse Fix\")",
+      "Bash(pkill -f \"Mac Mouse Fix\")",
+      "Bash(\"/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app/Contents/Library/LoginItems/Mac Mouse Fix Helper.app/Contents/MacOS/Mac Mouse Fix Helper\")",
+      "Bash(security find-identity *)",
+      "Bash(codesign --verify --deep --strict \"/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app\")",
+      "Bash(xattr -cr \"/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app\")",
+      "Bash(codesign --force --deep --sign - '/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app/Contents/Library/LoginItems/Mac Mouse Fix Helper.app')",
+      "Bash(codesign --force --deep --sign - '/Users/diepmac/Library/Developer/Xcode/DerivedData/Mouse_Fix-gugrpqnjuhnaegczpskkhhviafkf/Build/Products/Debug/Mac Mouse Fix.app')"
+    ]
+  }
+}

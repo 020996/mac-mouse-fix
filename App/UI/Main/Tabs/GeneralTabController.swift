@@ -199,10 +199,10 @@ class GeneralTabController: NSViewController {
                         
                         
                         if #available(macOS 13.0, *), error.domain == "SMAppServiceErrorDomain", error.code == 1 {
-                            
+
                             Toasts.showSimpleToast(name: "k-is-disabled-toast")
                         }
-                        else { assert(false) }
+                        else { DDLogError("enableHelper error (non-fatal): \(error)") }
                     }
                 })
                 
